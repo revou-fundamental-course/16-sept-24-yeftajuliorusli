@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<font-></font-family>
+<head>
+    <title>RevoU Mini Project</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <script>
+        // Ketika halaman dimuat, menampilkan prompt untuk memasukkan nama
+        window.onload = function() {
+            var userName = prompt("Masukkan nama Anda:");
+            if (userName) {
+                // Tampilkan nama
+                document.getElementById("name").innerText = userName + ", ";
+            } else {
+                // Jika tidak diisi, tampilkan teks default
+                document.getElementById("name").innerText = " Pengguna, ";
+            }
+        };
+    </script>
+
+</head>
+<body >
+    <header class="main-header">
+        <!--logo-->
+        <div class="profile-icon"></div>
+        <!--navigation-->
+        <nav>
+            <a href="#section-home">
+                <p><b>Home</b></p>
+            </a>
+            <a href="#section-profile">
+                <p><b>Profile</b></p>
+            </a>
+            <a href="#section-portofolio">
+                <p><b>Portofolio</b></p>
+            </a>
+            <a href="#section-message">
+                <p><b>Message Us</b></p>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- home -->
+        <section id="section-home">
+            <header>
+                <h2>Hi <span id="name"></span>Welcome To My Website.
+                    Ini adalah website mini project saya.
+                </h2>
+            <script src="./js/script.js"></script>
+            </header>
+            <article>
+                    <div class="photo-banner" class="">
+                        <img class="myslides" src="./assets/hutan.jpg" style="width:100%;">
+                    </div>
+                    <script src="./js/script.js"></script>
+            </article>
+           
+        </section>
+    <hr color="white"/>
+
+        <!--profile-->
+        <section id="section-profile">
+            <header>
+                <h1 style="color: rgb(0, 0, 0);">Wisata</h1>
+            </header>
+            <div class="profile-icon-container">
+                <div>
+                    <div class="wisata1"></div>
+                    <h5>Taman Safari I dibangun pada tahun 1980 di atas lahan perkebunan yang tidak produktif seluas 50 hektar. Pada tahun 1990, taman ini dinobatkan sebagai Obyek Wisata Nasional oleh Soesilo Sudarman, Menteri Pariwisata, Pos dan Telekomunikasi saat itu.</h5>
+                </div>
+                <div>
+                    <div class="wisata2"></div>
+                    <h5>Kebun Raya Bogor memiliki luas mencapai 87 hektar dengan 15.000 jenis koleksi pohon dan tumbuhan. Sejarah Kebun Raya Bogor menjadi identitas bangsa serta memberikan kontribusi pembangunan ekonomi global. Reputasi sejarahnya melahirkan banyak lembaga penelitian dan menjadi pusat penelitian biologi tropis kelas dunia.</h5>
+                </div>
+                <div>
+                    <div class="wisata3"></div>
+                    <h5>Dairyland merupakan area wisata utama Cimory. Tempat ini merupakan kawasan peternakan dengan konsep kandang terbuka. Di dalamnya terdapat berbagai jenis hewan ternak, seperti sapi perah, bebek peking, domba merino, burung unta, keledai dan lain lain.</h5>
+                </div>
+            </div>
+        </section>
+        <hr color="white"/>
+
+        <!--portofolio-->
+        <section id="section-portofolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+            <br>
+            <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt qui minima debitis iure molestias porro nam facilis laudantium. Praesentium nemo suscipit minima. Deserunt alias voluptatem illo? Possimus quos optio, corporis explicabo saepe praesentium aspernatur enim laboriosam veniam soluta amet deleniti accusamus, et, nostrum nesciunt distinctio esse inventore cumque illo.
+            </h4>
+        </section>
+            <hr color="white"/>
+        <!--message-->
+
+        <section id="section-message">
+            
+            <header>
+                <h1 style="color: black;">Message Us</h1>
+            </header>
+            <br/>
+            <section>
+                <section>
+                    <!--form-->
+                    <form name="message-form" onsubmit="return validateMessage()">
+                        <h3>Nama :<input placeholder="Nama" type="text" name="full-name" /></h3>
+                        <br />
+            
+                        <h3>Tanggal Lahir : <input type="date" name="birth-date" /></h3>
+                        <br/>
+            
+                        <h3>Jenis Kelamin : 
+                        <input type="radio" id="Laki-laki" name="gender" value="Laki-laki" />
+                        <label for="Laki-laki">Laki-laki</label>
+                        <input type="radio" id="Perempuan" name="gender" value="Perempuan" />
+                        <label for="Perempuan">Perempuan</label></h3>
+                        <br/>
+            
+                        <h3>Pesan : <textarea placeholder="Pesan" name="messages"></textarea></h3>
+                        <br/>
+            
+                        <input type="submit" value="submit" />
+                        <script src="./js/script.js"></script>
+                    </form>
+                    
+                    </section>
+                    <!--result form-->
+                    <div>
+                        <h3>Nama : <span id="sender-full-name"></span></h3>
+                        <h3>Tanggal lahir : <span id="sender-birth-date"></span></h3>
+                        <h3>Jenis kelamin : <span id="sender-gender"></span></h3>
+                        <h3>Pesan : <span id="sender-messages"></span></h3>
+                    </div>
+                    <script src="./js/script.js"></script>
+            </section>
+        </section>
+
+        <!--responsive-->
+        
+    </main>
+    <hr color="white" style="height: 5px;"/>
+
+    <footer>
+        <p>Copyright © Yefta Julio Rusli 2024</p>
+    </footer>
+    
+</body>
+</html>
